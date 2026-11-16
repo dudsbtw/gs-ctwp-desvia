@@ -1,0 +1,66 @@
+{
+    "aviso": "dados simulados para o protótipo, não vêm de feeds em tempo real",
+    "interrupcoes": [
+        {"linha": "metro_itaquera", "motivo": "falha de sinalização", "atraso_min": 25, "fonte": "simulado"},
+        {"linha": "trem_itaquera", "motivo": "velocidade reduzida", "atraso_min": 7, "fonte": "simulado"},
+        {"linha": "onibus_sto_amaro", "motivo": "alagamento no corredor", "atraso_min": 25, "fonte": "simulado"},
+        {"linha": "metro_tucuruvi", "motivo": "falha em trem na via", "atraso_min": 12, "fonte": "simulado"},
+        {"linha": "onibus_tucuruvi", "motivo": "trânsito intenso", "atraso_min": 15, "fonte": "simulado"},
+        {"linha": "trem_barra_funda", "motivo": "manutenção na via", "atraso_min": 20, "fonte": "simulado"},
+        {"linha": "metro_campo_limpo", "motivo": "intervalo maior entre trens", "atraso_min": 6, "fonte": "simulado"},
+        {"linha": "onibus_campo_limpo", "motivo": "desvio por obra na via", "atraso_min": 10, "fonte": "simulado"}
+    ],
+    "trajetos": [
+        {
+            "id": 1,
+            "origem": "Itaquera",
+            "destino": "Paulista",
+            "rotas": [
+                {"nome": "Metrô com baldeação", "linha": "metro_itaquera", "tempo_min": 50, "custo": 5.00, "chegadas_min": [3, 9, 15, 21]},
+                {"nome": "Trem + Metrô", "linha": "trem_itaquera", "tempo_min": 55, "custo": 5.00, "chegadas_min": [6, 18, 30]},
+                {"nome": "Ônibus direto", "linha": "onibus_itaquera", "tempo_min": 80, "custo": 5.00, "chegadas_min": [8, 20, 32]},
+                {"nome": "Ônibus + Metrô", "linha": "onibus_metro_itaquera", "tempo_min": 65, "custo": 5.00, "chegadas_min": [5, 14, 23]}
+            ]
+        },
+        {
+            "id": 2,
+            "origem": "Santo Amaro",
+            "destino": "Paulista",
+            "rotas": [
+                {"nome": "Metrô com baldeação", "linha": "metro_sto_amaro", "tempo_min": 40, "custo": 5.00, "chegadas_min": [4, 10, 16, 22]},
+                {"nome": "Trem + Metrô", "linha": "trem_sto_amaro", "tempo_min": 52, "custo": 5.00, "chegadas_min": [7, 22, 37]},
+                {"nome": "Ônibus corredor", "linha": "onibus_sto_amaro", "tempo_min": 60, "custo": 5.00, "chegadas_min": [5, 12, 19]}
+            ]
+        },
+        {
+            "id": 3,
+            "origem": "Tucuruvi",
+            "destino": "Paulista",
+            "rotas": [
+                {"nome": "Metrô com baldeação", "linha": "metro_tucuruvi", "tempo_min": 42, "custo": 5.00, "chegadas_min": [2, 8, 14, 20]},
+                {"nome": "Ônibus direto", "linha": "onibus_tucuruvi", "tempo_min": 70, "custo": 5.00, "chegadas_min": [6, 15, 24]},
+                {"nome": "Ônibus + Metrô", "linha": "onibus_metro_tucuruvi", "tempo_min": 58, "custo": 5.00, "chegadas_min": [4, 11, 18]}
+            ]
+        },
+        {
+            "id": 4,
+            "origem": "Campo Limpo",
+            "destino": "Paulista",
+            "rotas": [
+                {"nome": "Metrô com baldeação", "linha": "metro_campo_limpo", "tempo_min": 50, "custo": 5.00, "chegadas_min": [5, 11, 17]},
+                {"nome": "Ônibus direto", "linha": "onibus_campo_limpo", "tempo_min": 70, "custo": 5.00, "chegadas_min": [7, 17, 27]},
+                {"nome": "Ônibus + Metrô", "linha": "onibus_metro_campo_limpo", "tempo_min": 62, "custo": 5.00, "chegadas_min": [6, 13, 20]}
+            ]
+        },
+        {
+            "id": 5,
+            "origem": "Barra Funda",
+            "destino": "Paulista",
+            "rotas": [
+                {"nome": "Metrô com baldeação", "linha": "metro_barra_funda", "tempo_min": 30, "custo": 5.00, "chegadas_min": [3, 8, 13, 18]},
+                {"nome": "Trem + Metrô", "linha": "trem_barra_funda", "tempo_min": 35, "custo": 5.00, "chegadas_min": [5, 15, 25]},
+                {"nome": "Ônibus direto", "linha": "onibus_barra_funda", "tempo_min": 45, "custo": 5.00, "chegadas_min": [4, 12, 20]}
+            ]
+        }
+    ]
+}
