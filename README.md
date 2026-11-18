@@ -64,4 +64,4 @@ Mantenha `desvia.py` e `dados_simulados.json` na mesma pasta.
 | Listas, tuplas e dicionários | rotas (lista), `obter_par` (tupla), trajetos e relatos (dicionários) |
 | JSON | `dados_simulados.json` (leitura) e `usuario.json` (leitura e gravação) |
 
-Uso de IA documentado em `prompt.md`.
+Uso de IA documentado em `prompts.md`.
